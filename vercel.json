@@ -6,8 +6,10 @@
       "framework": "vite"
     },
     "local-backend": {
-      "root": "client/packages/local-backend",
-      "runtime": "node"
+  "root": "client/packages/local-backend",
+  "runtime": "node",
+  "entrypoint": "src/index.mjs"
+    }
     },
     "stemstudio-copilot": {
       "root": "stemstudio-copilot",
