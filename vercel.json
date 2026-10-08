@@ -1,31 +1,30 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "services": {
-    "app": {
-      "root": ".",
-      "framework": "vite"
-    },
-    "local-backend": {
-      "root": "client/packages/local-backend",
-      "runtime": "node",
-      "entrypoint": "src/index.mjs"
-    }
-    },
-    "stemstudio-copilot": {
-      "root": "stemstudio-copilot",
-      "runtime": "python"
-    },
-    "stemstudio-multiplayer": {
-      "root": "stemstudio-multiplayer",
-      "runtime": "container"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": {
-        "service": "app"
-      }
-    }
-  ]
+"$schema": "https://openapi.vercel.sh/vercel.json",
+"services": {
+"app": {
+"root": ".",
+"framework": "vite"
+},
+"local-backend": {
+"root": "client/packages/local-backend",
+"runtime": "node",
+"entrypoint": "src/index.mjs"
+},
+"stemstudio-copilot": {
+"root": "stemstudio-copilot",
+"runtime": "python"
+},
+"stemstudio-multiplayer": {
+"root": "stemstudio-multiplayer",
+"runtime": "container"
+}
+},
+"rewrites": [
+{
+"source": "/(.*)",
+"destination": {
+"service": "app"
+}
+}
+]
 }
