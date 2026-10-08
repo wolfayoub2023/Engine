@@ -12,8 +12,8 @@
     },
     "stemstudio-copilot": {
       "root": "stemstudio-copilot",
-      "framework": "python",
-      "entrypoint": "src/index.py"
+      "framework": "node",
+      "entrypoint": "src/index.ts"
     },
     "stemstudio-multiplayer": {
       "root": "stemstudio-multiplayer",
