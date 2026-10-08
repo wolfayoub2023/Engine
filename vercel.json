@@ -1,0 +1,29 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "app": {
+      "root": ".",
+      "framework": "vite"
+    },
+    "local-backend": {
+      "root": "client/packages/local-backend",
+      "runtime": "node"
+    },
+    "stemstudio-copilot": {
+      "root": "stemstudio-copilot",
+      "runtime": "python"
+    },
+    "stemstudio-multiplayer": {
+      "root": "stemstudio-multiplayer",
+      "runtime": "container"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "app"
+      }
+    }
+  ]
+}
